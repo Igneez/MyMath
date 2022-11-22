@@ -18,6 +18,22 @@ repositories {
 
 dependencies {
     implementation(compose.desktop.currentOs)
+
+    implementation("com.darkrockstudios:richtexteditor:1.3.0")
+
+// for Cyrillic symbols
+    implementation ("ru.noties:jlatexmath-android-font-cyrillic:0.2.0")
+
+// for Greek symbols
+    implementation ("ru.noties:jlatexmath-android-font-greek:0.2.0")
+
+    implementation("org.scilab.forge:jlatexmath:1.0.7")
+
+    implementation("com.mikepenz:multiplatform-markdown-renderer:0.6.1")
+
+    implementation ("org.jetbrains:markdown:0.3.1") //???
+
+
 }
 
 tasks.withType<KotlinCompile> {
